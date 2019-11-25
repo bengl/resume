@@ -17,7 +17,3 @@ it.
 
 Second, a PDF is easy enough to generate with "Print to PDF" and similar
 features. Add in a touch of print CSS, and it's golden.
-
-For the moment, this is just a rough draft. I need to style it a tad more, work
-on better formatting, etc. Also note that **I'm not currently actively looking
-for work**. 
