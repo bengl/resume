@@ -7,8 +7,18 @@ body {
   font-size: smaller;
 }
 
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
 header {
   text-align: center;
+}
+
+a {
+  color: rgb(0, 0, 238);
+  text-decoration: none;
 }
 
 #contact {
@@ -63,10 +73,20 @@ section h2 {
   margin-left: auto;
 }
 
-article {
+#publications .title {
+  font-weight: bold;
+}
+
+#publications article {
   padding-bottom: 1em;
   page-break-inside: avoid;
 }
+
+#experience article {
+  padding-bottom: 1em;
+  page-break-inside: avoid;
+}
+
     </style>
   </head>
   <body>
@@ -95,9 +115,8 @@ article {
       <h2>Open Source Work</h2>
       <article>
         <ul>
-          <li>Node.js Collaborator (with numerous <a href="https://github.com/nodejs/node/commits?author=bengl">commits</a>)</li>
-          <li>Author of <a href=https://github.com/qddjs/qdd>QDD</a><ul><li>The fastest JavaScript package installer.</li></ul></li>
-          <li>One of several authors of <a href=https://github.com/IntrinsicLabs/osgood>Osgood</a><ul><li>A fast and secure JavaScript web application server platform.</li></ul></li>
+          <li>Node.js Collaborator and Releaser (<a href="https://github.com/nodejs/node/commits?author=bengl">commits</a>)</li>
+          <li>Co-author of <a href=https://github.com/IntrinsicLabs/osgood>Osgood</a><ul><li>A fast and secure JavaScript web app runtime.</li></ul></li>
           <li>Other projects on <a href=https://github.com/bengl>GitHub</a> and <a href=https://www.npmjs.com/~bengl>npm</a></li>
         </ul>
       </article>
@@ -105,8 +124,36 @@ article {
     </div>
     <hr />
 
+    <section id=publications>
+      <h2>Publications</h2>
+      <article>
+        <div class=title><a href=https://www.google.com/books/edition/Multithreaded_JavaScript/74BpzgEACAAJ?hl=en>Multithreaded JavaScript: Concurrency Beyond the Event Loop</a></div>
+        <div>
+          <span class=timeframe>Published October 2021</span>
+          <span class=publisher>O'Reilly Media</span>
+        </div>
+        <div class=authors>Co-authored by Thomas Hunter II</div>
+      </article>
+    </section>
+
     <section id=experience>
       <h2>Experience</h2>
+      <article>
+        <span class=company><a href=https://datadoghq.com>Datadog</a> (New York, NY)</span>
+        <span class=timeframe>December 2019 ~ Present</span>
+        <span class=title>Senior Open Source Software Engineer - Node.js</span>
+        <ul>
+          <li>Maintained an open-source library for both automatic and manual instrumentation of Node.js modules for distributed tracing.</li>
+          <li>Completed and implemented a release process and policy, to enable a path forward for breaking changes while keeping compatibility and support for customers unable to upgrade.</li>
+          <li>Shipped the first known support for Node.js-native EcmaScript Modules in an APM tool.</li>
+          <li>Mentored new employees and interns onboarding to the team.</li>
+          <li>Led weekly planning and status meetings for the team.</li>
+          <li>Built a microbenchmarking framework to better analyze performance differences between commits.</li>
+          <li>Created and reviewed internal RFCs for new features and improvements.</li>
+          <li>While on escalation rotation, assisted customers directly with various API issues, performance problems, and onboarding roadblocks, via both Zendesk/JIRA and Zoom calls.</li>
+        </ul>
+
+      </article>
       <article>
         <span class=company><a href=https://intrinsic.com>Intrinsic</a> (San Francisco, CA)</span>
         <span class=timeframe>July 2016 ~ August 2019</span>
@@ -133,7 +180,7 @@ article {
           <li>Rewrote large parts of and maintained internal npm registry, including dealing with internal packages, external packages and a whitelist.</li>
           <li>Dealt with scalability issues with the internal npm registry.</li>
           <li>Contributed to registry-static, an open source package used internally to mirror the public registry.</li>
-          <li>Participated in Node.js Foundation working groups, to help improve Node.js as an enterprise product.</li>
+          <li>Participated in Node.js working groups, to help improve Node.js as an enterprise product.</li>
         </ul>
       </article>
       <article>
@@ -179,8 +226,8 @@ article {
         <span class=timeframe>June 2008 ~ April 2011</span>
         <ul>
           <li>Maintained a variety of Canada Post applications in Java, including the Canada Post website.</li>
+          <li>Installed, configured and supported CA Wily Introscope (now known as Broadcom Dx Application Performance Management) monitoring production website performance.</li>
           <li>Built a Python WSGI web application to consolidate performance metrics and present them as an API and through HTML5 dashboards.</li>
-          <li>Installed, configured and supported CA Wily Introscope for monitoring production website performance.</li>
         </ul>
       </article>
     </section>
